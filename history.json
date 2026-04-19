@@ -1,3 +1,12 @@
 {
-  "reported_pmids": {}
+  "reported_pmids": {
+    "41979893": {
+      "title": "Long-Term Exposure to Fine Particulate Matter and Kidney Function among Patients with Polycystic Kidney Disease.",
+      "reported_at": "2026-04-19T03:43:57.715251"
+    },
+    "41992156": {
+      "title": "Case report: dual pathology of LMX1B-associated nephropathy and iga nephropathy in a middle-aged woman.",
+      "reported_at": "2026-04-19T03:43:57.715251"
+    }
+  }
 }
