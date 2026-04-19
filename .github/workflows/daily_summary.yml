@@ -64,7 +64,7 @@ jobs:
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
         run: |
           mkdir -p output
-          rm -f output/*.docx
+          rm -f output/*.docx output/email_body.txt
           python main.py
 
       - name: Find output file
@@ -80,6 +80,18 @@ jobs:
           echo "file_name=$(basename $WORD_FILE)" >> $GITHUB_OUTPUT
           echo "file_found=true" >> $GITHUB_OUTPUT
 
+          # メール本文をマルチライン対応でGITHUB_OUTPUTに書き出す
+          EMAIL_BODY_FILE="output/email_body.txt"
+          if [ -f "$EMAIL_BODY_FILE" ]; then
+            {
+              echo "email_body<<EOF_EMAIL_BODY"
+              cat "$EMAIL_BODY_FILE"
+              echo "EOF_EMAIL_BODY"
+            } >> $GITHUB_OUTPUT
+          else
+            echo "email_body=（本文ファイルが見つかりません）" >> $GITHUB_OUTPUT
+          fi
+
       - name: Send Summary via Email
         if: steps.find_file.outputs.file_found == 'true'
         uses: dawidd6/action-send-mail@v3
@@ -92,12 +104,7 @@ jobs:
           subject: 🩺【医学論文レビュー】新着の論文要約をお届けします
           to: ${{ secrets.GMAIL_RECIPIENT }}
           from: "AI論文要約システム"
-          body: |
-            本日の最新医学論文の要約が完了しました。
-            添付のWordファイル（${{ steps.find_file.outputs.file_name }}）をご確認ください。
-
-            --
-            自動生成: GitHub Actions
+          body: ${{ steps.find_file.outputs.email_body }}
           attachments: ${{ steps.find_file.outputs.file_path }}
 
       - name: Save history

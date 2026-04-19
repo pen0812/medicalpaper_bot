@@ -170,7 +170,7 @@ class WordGenerator:
 
     def _add_paper_info_table(self, doc: Document, paper: Paper):
         """論文基本情報テーブルを追加する"""
-        table = doc.add_table(rows=5, cols=2)
+        table = doc.add_table(rows=6, cols=2)
         table.style = "Light Grid Accent 1"
         table.alignment = WD_TABLE_ALIGNMENT.CENTER
 
@@ -183,10 +183,14 @@ class WordGenerator:
         # 論文タイプ
         pub_type_str = ", ".join(paper.pub_types) if paper.pub_types else "N/A"
 
+        # IFの表示文字列
+        if_str = paper.impact_factor if paper.impact_factor != "不明" else "不明"
+
         # テーブルデータ
         data = [
             ("著者", author_str),
             ("ジャーナル", paper.journal),
+            ("インパクトファクター", if_str),
             ("出版日", paper.pub_date),
             ("論文タイプ", pub_type_str),
             ("DOI", paper.doi if paper.doi else "N/A"),
@@ -393,6 +397,12 @@ class WordGenerator:
             run_title = p_title.add_run(f"{i}. 【{importance}】 {paper.title}")
             run_title.font.bold = True
             run_title.font.size = Pt(11)
+
+            # ・ジャーナル：... (IF: ...)
+            if_str = paper.impact_factor if paper.impact_factor != "不明" else "不明"
+            p_journal = doc.add_paragraph(style="List Bullet")
+            p_journal.paragraph_format.left_indent = Cm(0.5)
+            self._add_formatted_text(p_journal, f"**ジャーナル**：{paper.journal}　IF: {if_str}")
 
             # ・結論：...
             p_conc = doc.add_paragraph(style="List Bullet")

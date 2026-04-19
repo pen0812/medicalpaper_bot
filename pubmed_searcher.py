@@ -32,6 +32,8 @@ class Paper:
     # フィルタリング後に付与
     priority_score: float = 0.0
     priority_rank: int = 0
+    # インパクトファクター（Geminiによる取得）
+    impact_factor: str = "不明"
     # AI要約結果
     summary: dict = field(default_factory=dict)
 

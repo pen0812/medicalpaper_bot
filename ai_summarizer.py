@@ -106,6 +106,57 @@ class AISummarizer:
         logger.error("全モデルで生成に失敗しました")
         return None
 
+    def fetch_impact_factors(self, papers: list[Paper]) -> None:
+        """
+        Geminiを使って各論文のジャーナルのインパクトファクターを取得する。
+        結果はpaper.impact_factorに直接セットする。
+        """
+        # 重複を除いたジャーナル名のリスト
+        journals = list({p.journal for p in papers if p.journal})
+        if not journals:
+            return
+
+        journals_text = "\n".join(f"- {j}" for j in journals)
+        prompt = f"""以下の医学雑誌について、最新（2023年または2024年）のインパクトファクター（IF）を教えてください。
+
+{journals_text}
+
+出力形式: 各ジャーナルについて以下の形式で、1行ずつ出力してください。
+ジャーナル名|IF値
+
+IF値は数値のみ（例: 12.3）。不明・非掲載の場合は「不明」と記載。
+前置きや説明は一切不要で、リストのみ出力してください。"""
+
+        logger.info("ジャーナルのインパクトファクターをGeminiで取得中...")
+        result = self._call_with_fallback(prompt)
+        if not result:
+            logger.warning("IFの取得に失敗しました")
+            return
+
+        # 結果をパース: "ジャーナル名|IF値" 形式
+        if_map: dict[str, str] = {}
+        for line in result.strip().splitlines():
+            line = line.strip()
+            if "|" in line:
+                parts = line.split("|", 1)
+                journal_name = parts[0].strip()
+                if_val = parts[1].strip()
+                if_map[journal_name] = if_val
+
+        # paperにセット（部分一致でマッチング）
+        for paper in papers:
+            matched_if = if_map.get(paper.journal)
+            if not matched_if:
+                # 部分一致フォールバック
+                for k, v in if_map.items():
+                    if k.lower() in paper.journal.lower() or paper.journal.lower() in k.lower():
+                        matched_if = v
+                        break
+            if matched_if:
+                paper.impact_factor = matched_if
+
+        logger.info(f"IFを取得しました: {if_map}")
+
     def summarize_papers(
         self, papers: list[Paper], detailed_top_n: int = 10
     ) -> list[Paper]:

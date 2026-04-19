@@ -7,6 +7,7 @@ PubMed検索 → フィルタリング → AI要約 → Word出力 の
 
 import argparse
 import logging
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -186,6 +187,9 @@ def main():
         logger.info("━━━ ステップ3: AI要約生成 ━━━")
         summarizer = AISummarizer(config, gemini_key)
 
+        # インパクトファクター取得
+        summarizer.fetch_impact_factors(top_papers)
+
         # 選出理由を事前生成
         for paper in top_papers:
             paper._selection_reason = summarizer.generate_selection_reason(
@@ -212,6 +216,13 @@ def main():
 
         result_path = generator.generate(top_papers, output_path)
 
+        # メール本文テキスト生成
+        logger.info("━━━ メール本文生成 ━━━")
+        email_body = _build_email_body(top_papers, result_path)
+        email_body_path = Path("output") / "email_body.txt"
+        email_body_path.write_text(email_body, encoding="utf-8")
+        logger.info(f"メール本文を生成しました: {email_body_path}")
+
         # ステップ5: 履歴更新
         logger.info("━━━ ステップ5: 履歴更新 ━━━")
         filterer.save_history(top_papers)
@@ -227,6 +238,62 @@ def main():
     except Exception as e:
         logger.error(f"予期しないエラーが発生しました: {e}", exc_info=True)
         sys.exit(1)
+
+
+def _build_email_body(papers, word_file_path: str) -> str:
+    """サマリーインデックスをプレーンテキストのメール本文として生成する"""
+    now = datetime.now()
+    lines = []
+    lines.append(f"■ 医学論文サマリーインデックス　{now.strftime('%Y年%m月%d日')}")
+    lines.append("=" * 60)
+
+    for i, paper in enumerate(papers, 1):
+        content = paper.summary.get("content", "")
+
+        # 重要度・結論・実用を抽出
+        importance = "★★★☆☆"
+        conclusion = "要約参照"
+        practical = "要約参照"
+
+        section_match = re.search(
+            r"(?:##+|[*]{2})\s*サマリーインデックス情報.*?\n(.*?)(?=\n#|$)",
+            content, re.DOTALL | re.IGNORECASE
+        )
+        section_content = section_match.group(1) if section_match else content
+
+        imp_match = re.search(r"重要度.*?([★☆]+)", section_content)
+        if imp_match:
+            importance = imp_match.group(1).strip()
+
+        conc_match = re.search(r"結論(.*?)(?:実用|$)", section_content, re.DOTALL)
+        if conc_match:
+            val = re.sub(r"^[:：\s\*・-]*", "", conc_match.group(1))
+            val = re.sub(r"[\s\*・\-\d\.]*$", "", val)
+            val = re.sub(r"\*\*", "", val)
+            if val:
+                conclusion = val
+
+        prac_match = re.search(r"実用(.*?)$", section_content, re.DOTALL)
+        if prac_match:
+            val = re.sub(r"^[:：\s\*・-]*", "", prac_match.group(1))
+            val = re.sub(r"[\s\*・\-\d\.]*$", "", val)
+            val = re.sub(r"\*\*", "", val)
+            if val:
+                practical = val
+
+        if_str = f"IF {paper.impact_factor}" if paper.impact_factor != "不明" else "IF 不明"
+
+        lines.append("")
+        lines.append(f"【{i}】{paper.title}")
+        lines.append(f"　ジャーナル: {paper.journal}　{if_str}")
+        lines.append(f"　重要度: {importance}")
+        lines.append(f"　結論: {conclusion}")
+        lines.append(f"　実用: {practical}")
+        lines.append("-" * 60)
+
+    lines.append("")
+    lines.append(f"添付ファイル: {Path(word_file_path).name}")
+    return "\n".join(lines)
 
 
 if __name__ == "__main__":
