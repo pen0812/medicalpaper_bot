@@ -28,23 +28,23 @@ clinical_relevance:
   high_value:
   - cardiovascular events
   - all-cause mortality
-  - renal progression
+  - renal failure progression
   - end-stage renal disease
+  - dialysis initiation
+  - kidney transplant rejection
   - hospitalization rate
   - quality of life
-  - major adverse kidney events
-  - stroke prevention
-  - myocardial infarction
-  - diabetic complications
+  - adverse events
+  - patient outcomes
   practical:
-  - clinical guidelines
+  - clinical practice guidelines
   - treatment algorithms
-  - patient management
-  - shared decision making
-  - point of care
-  - risk stratification
-  - personalized medicine
+  - shared decision-making
+  - patient education
+  - cost-effectiveness
+  - real-world evidence
   - implementation science
+  - personalized medicine
   japan_relevant:
   - japanese
   - asian
@@ -78,115 +78,114 @@ specialty_name: 内科, 腎臓内科
 specialties:
   primary:
   - chronic kidney disease
-  - acute kidney injury
-  - hypertension
   - diabetes mellitus
-  - heart failure
+  - hypertension
+  - acute kidney injury
   - glomerulonephritis
-  - dialysis
-  secondary:
   - end-stage renal disease
+  secondary:
+  - dialysis
   - kidney transplantation
-  - electrolyte imbalance
-  - nephrotic syndrome
   - diabetic nephropathy
-  - renal anemia
-  - cardiovascular disease in ckd
-  - fluid management
-  - acid-base disorder
+  - hypertensive nephropathy
+  - renal replacement therapy
+  - fluid and electrolyte disorders
+  - acid-base balance
+  - nephrotic syndrome
+  - renal tubular acidosis
+  - polycystic kidney disease
   - urinary tract infection
-  - systemic lupus erythematosus
-  - vasculitis
+  - renal cell carcinoma
 journals:
   tier1:
   - N Engl J Med
   - Lancet
   - JAMA
-  - BMJ
   - Ann Intern Med
+  - BMJ
   tier2:
   - J Am Soc Nephrol
   - Kidney Int
   - Am J Kidney Dis
-  - J Gen Intern Med
-  - Mayo Clin Proc
-  tier3:
   - Clin J Am Soc Nephrol
-  - Nephrol Dial Transplant
-  - Hypertension
-  - Diabetes Care
+  - J Gen Intern Med
+  tier3:
+  - PLoS Med
+  - Nat Med
   - Circulation
-  - Am J Med
-  - JAMA Intern Med
-  - PLoS One
+  - Diabetes Care
+  - Hypertension
+  - Nephrol Dial Transplant
+  - BMC Nephrol
+  - Transplantation
 daily_themes:
   Monday:
     specialties:
-    - diabetes mellitus
-    - type 2 diabetes
-    - insulin resistance
+    - diabetes management
     - glycemic control
     - diabetic complications
+    - insulin therapy
+    - oral hypoglycemic agents
     journals:
     - Diabetes Care
-    - JAMA Intern Med
+    - Ann Intern Med
   Tuesday:
-    specialties:
-    - heart failure
-    - acute heart failure
-    - congestive heart failure
-    - left ventricular dysfunction
-    - cardiac remodeling
-    journals:
-    - Circulation
-    - J Am Coll Cardiol
-  Wednesday:
     specialties:
     - hypertension management
     - blood pressure control
+    - antihypertensive therapy
     - resistant hypertension
-    - electrolyte imbalance
-    - sodium potassium disorder
+    - hypertensive nephropathy
     journals:
     - Hypertension
-    - Am J Hypertens
+    - Am J Kidney Dis
+  Wednesday:
+    specialties:
+    - acute kidney injury
+    - aki prevention
+    - aki management
+    - sepsis-associated aki
+    - contrast-induced nephropathy
+    journals:
+    - Clin J Am Soc Nephrol
+    - Intensive Care Med
   Thursday:
     specialties:
     - chronic kidney disease
     - ckd progression
-    - renal function decline
-    - kidney disease management
-    - renal replacement therapy
+    - renal protection
+    - glomerular filtration rate
+    - albuminuria
     journals:
     - J Am Soc Nephrol
     - Kidney Int
   Friday:
     specialties:
-    - acute kidney injury
-    - aki prevention
-    - sepsis induced aki
-    - dialysis therapy
-    - hemodialysis peritoneal dialysis
+    - fluid and electrolyte disorders
+    - hyponatremia
+    - hyperkalemia
+    - acid-base balance
+    - metabolic acidosis
     journals:
-    - Clin J Am Soc Nephrol
     - Nephrol Dial Transplant
+    - N Engl J Med
   Saturday:
     specialties:
-    - glomerulonephritis
-    - lupus nephritis
-    - vasculitis renal involvement
-    - igA nephropathy
-    - minimal change disease
-    journals:
-    - Kidney Int
-    - Am J Kidney Dis
-  Sunday:
-    specialties:
+    - dialysis modalities
+    - hemodialysis
+    - peritoneal dialysis
     - kidney transplantation
-    - immunosuppression
-    - transplant rejection
-    - drug induced kidney injury
-    - pharmacotherapy in ckd
+    - renal replacement therapy
     journals:
     - Transplantation
-    - Am J Transplant
+    - J Am Soc Nephrol
+  Sunday:
+    specialties:
+    - glomerulonephritis
+    - nephrotic syndrome
+    - lupus nephritis
+    - vasculitis
+    - polycystic kidney disease
+    journals:
+    - Kidney Int
+    - Autoimmun Rev
