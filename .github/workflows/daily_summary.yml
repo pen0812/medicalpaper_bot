@@ -120,7 +120,7 @@ jobs:
               part = MIMEBase("application", "octet-stream")
               part.set_payload(f.read())
           encoders.encode_base64(part)
-          part.add_header("Content-Disposition", f'attachment; filename="{os.path.basename(word_file)}"')
+          part.add_header("Content-Disposition", "attachment", filename=("utf-8", "", os.path.basename(word_file)))
           msg.attach(part)
 
           with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
