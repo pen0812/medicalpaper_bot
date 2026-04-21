@@ -88,18 +88,46 @@ jobs:
 
       - name: Send Summary via Email
         if: steps.find_file.outputs.file_found == 'true'
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{ secrets.GMAIL_USERNAME }}
-          password: ${{ secrets.GMAIL_APP_PASSWORD }}
-          subject: 🩺【医学論文レビュー】新着の論文要約をお届けします
-          to: ${{ secrets.GMAIL_RECIPIENT }}
-          from: "AI論文要約システム"
-          body_path: output/email_body.txt
-          attachments: ${{ steps.find_file.outputs.file_path }}
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_RECIPIENT: ${{ secrets.GMAIL_RECIPIENT }}
+          WORD_FILE: ${{ steps.find_file.outputs.file_path }}
+        run: |
+          python - <<'EOF'
+          import smtplib, os
+          from email.mime.multipart import MIMEMultipart
+          from email.mime.text import MIMEText
+          from email.mime.base import MIMEBase
+          from email import encoders
+          from email.header import Header
+
+          username = os.environ["GMAIL_USERNAME"]
+          password = os.environ["GMAIL_APP_PASSWORD"]
+          recipient = os.environ["GMAIL_RECIPIENT"]
+          word_file = os.environ["WORD_FILE"]
+
+          with open("output/email_body.txt", encoding="utf-8") as f:
+              body = f.read()
+
+          msg = MIMEMultipart()
+          msg["From"] = f"AI論文要約システム <{username}>"
+          msg["To"] = recipient
+          msg["Subject"] = Header("🩺【医学論文レビュー】新着の論文要約をお届けします", "utf-8")
+          msg.attach(MIMEText(body, "plain", "utf-8"))
+
+          with open(word_file, "rb") as f:
+              part = MIMEBase("application", "octet-stream")
+              part.set_payload(f.read())
+          encoders.encode_base64(part)
+          part.add_header("Content-Disposition", f'attachment; filename="{os.path.basename(word_file)}"')
+          msg.attach(part)
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+              server.login(username, password)
+              server.sendmail(username, recipient, msg.as_string())
+          print("メール送信完了")
+          EOF
 
       - name: Save history
         run: |
