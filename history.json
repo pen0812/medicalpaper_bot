@@ -1,49 +1,5 @@
 {
   "reported_pmids": {
-    "42019020": {
-      "title": "Spinal Epidural Abscess.",
-      "reported_at": "2026-04-26T22:40:21.515612"
-    },
-    "42026010": {
-      "title": "Clinical and bacteriological effectiveness of three different short-course antibiotic regimens and single-dose fosfomycin for uncomplicated lower urinary tract infections in women (SCOUT): a pragmatic, multicentre, open-label, randomised clinical trial.",
-      "reported_at": "2026-04-27T22:55:28.508376"
-    },
-    "42010103": {
-      "title": "Social Medicine Approaches to Community-Integrated Diabetes Care: A Narrative Review of Clinic-Based Triaging and Closed-Loop Referral Interventions.",
-      "reported_at": "2026-04-27T22:55:28.508376"
-    },
-    "42008245": {
-      "title": "Prepregnancy Care and Counseling: A Review.",
-      "reported_at": "2026-04-27T22:55:28.508376"
-    },
-    "42010096": {
-      "title": "A Decentralized, Academically Integrated Training Model for Rural General Practice in Japan: A Descriptive Program Evaluation.",
-      "reported_at": "2026-04-27T22:55:28.508376"
-    },
-    "42010098": {
-      "title": "Medical-Legal Partnership as Value-Based Primary Care: Interprofessional Teamwork for Health-Related Social Needs.",
-      "reported_at": "2026-04-27T22:55:28.508376"
-    },
-    "42035778": {
-      "title": "Pharmacological blood-pressure lowering for the prevention of cardiovascular disease and death across the full spectrum of chronic kidney disease severity: an individual-participant data meta-analysis.",
-      "reported_at": "2026-04-28T22:59:21.388043"
-    },
-    "42044651": {
-      "title": "Burden and determinants of diabetes in sub-Saharan Africa.",
-      "reported_at": "2026-04-28T22:59:21.388043"
-    },
-    "42048576": {
-      "title": "Dose-Response Associations of Intermittent Lifestyle Physical Activity Micropatterns and Incident Type 2 Diabetes.",
-      "reported_at": "2026-04-28T22:59:21.388043"
-    },
-    "42035781": {
-      "title": "Continuous glucose monitoring versus self-monitoring of blood glucose in individuals with type 2 diabetes: a randomised, multicentre, open-label, superiority trial.",
-      "reported_at": "2026-04-28T22:59:21.388043"
-    },
-    "42030121": {
-      "title": "The Effectiveness of Diabetes Prevention Programs Delivered in Primary Care for Individuals With Prediabetes or at Risk of Developing Type 2 Diabetes: A Systematic Review and Meta-analysis.",
-      "reported_at": "2026-04-28T22:59:21.388043"
-    },
     "42053857": {
       "title": "Attribute-based cross-classification reveals sex- and age-specific prognostic impact of anemia in ADPKD.",
       "reported_at": "2026-04-30T22:55:51.451677"
@@ -1719,6 +1675,26 @@
     "42886061": {
       "title": "High sensitivity C-reactive protein and the risk of cardio-kidney outcomes in adults with moderate to severe chronic kidney disease: a nationwide study.",
       "reported_at": "2026-10-23T00:26:50.534794"
+    },
+    "42912779": {
+      "title": "Search for the glycated hemoglobin target minimizing mortality among people with type 2 diabetes with rare incidence of treatment-related severe hypoglycemia - Epidemiologic analysis of J-DOIT3 randomized controlled trial.",
+      "reported_at": "2026-10-27T01:14:38.887370"
+    },
+    "42900851": {
+      "title": "A Recipe for Better Diabetes Management: The DASH4D Dietary Pattern.",
+      "reported_at": "2026-10-27T01:14:38.887370"
+    },
+    "42911939": {
+      "title": "Polylactic co-glycolic acid (PLGA)-based nanoparticles encapsulating Persea americana seed extract: A potential therapeutic strategy against oxidative stress and diabetes in rat model.",
+      "reported_at": "2026-10-27T01:14:38.887370"
+    },
+    "42905688": {
+      "title": "Obesity in Children Aged 2 to 12 Years: A Review.",
+      "reported_at": "2026-10-27T01:14:38.887370"
+    },
+    "42931903": {
+      "title": "Traditional Chinese medicine in CKD: myths, facts, and evidence.",
+      "reported_at": "2026-10-27T01:14:38.887370"
     }
   }
 }
