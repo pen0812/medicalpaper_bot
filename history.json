@@ -1,25 +1,5 @@
 {
   "reported_pmids": {
-    "42065712": {
-      "title": "KDIGO 2025 Clinical Practice Guideline for ADPKD: a commentary on intracranial aneurysms and other vascular manifestations from the ERA Working Group Genes & Kidney.",
-      "reported_at": "2026-05-01T22:53:38.488205"
-    },
-    "42047192": {
-      "title": "Ketogenic Diets and Low-Density Lipoprotein Cholesterol in Adults With Normal Weight: An Emerging Clinical Challenge.",
-      "reported_at": "2026-05-01T22:53:38.488205"
-    },
-    "42059060": {
-      "title": "Peri-Arterial Neural Dissection During Adrenal Surgery Provides a Denervation-Like Benefit in Hypertension Control.",
-      "reported_at": "2026-05-01T22:53:38.488205"
-    },
-    "41521906": {
-      "title": "Efficacy and Safety of Treatment With Low Doses of Spironolactone in Patients With Primary Aldosteronism: A Retrospective Observational Study in a Tertiary Center.",
-      "reported_at": "2026-05-01T22:53:38.488205"
-    },
-    "42037312": {
-      "title": "Evolving Patterns of Prevalence and Management of Hypertension Phenotypes in Mexico: A 2-Decade Analysis of Nationally Representative Surveys.",
-      "reported_at": "2026-05-01T22:53:38.488205"
-    },
     "41852575": {
       "title": "Osteoporosis and CKD-Metabolic Bone Disease Under the Same Umbrella: Insights From a Joint Scientific Symposium.",
       "reported_at": "2026-05-02T22:43:23.791253"
@@ -1687,6 +1667,10 @@
     "42907386": {
       "title": "A Case of Autosomal Dominant Alport Syndrome with Normal Type IV Collagen α5 Staining Diagnosed by a Genetic Analysis.",
       "reported_at": "2026-10-28T01:00:43.920269"
+    },
+    "42950124": {
+      "title": "Clinical and Laboratory Factors Associated with Renal Complications Following High-Voltage Electrical Burns: A Retrospective Cohort Study.",
+      "reported_at": "2026-10-29T01:36:07.898057"
     }
   }
 }
