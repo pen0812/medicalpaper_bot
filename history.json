@@ -1,9 +1,5 @@
 {
   "reported_pmids": {
-    "41852575": {
-      "title": "Osteoporosis and CKD-Metabolic Bone Disease Under the Same Umbrella: Insights From a Joint Scientific Symposium.",
-      "reported_at": "2026-05-02T22:43:23.791253"
-    },
     "41419216": {
       "title": "Using the Comparing Oral versus Parenteral Antimicrobial Therapy (COPAT) Clinical Trial to Influence Institutional Practice Transformation Towards Earlier Transition to Oral Antibiotics.",
       "reported_at": "2026-05-03T22:44:04.161812"
@@ -1671,6 +1667,14 @@
     "42950124": {
       "title": "Clinical and Laboratory Factors Associated with Renal Complications Following High-Voltage Electrical Burns: A Retrospective Cohort Study.",
       "reported_at": "2026-10-29T01:36:07.898057"
+    },
+    "42924847": {
+      "title": "Lipoprotein(a) and Risk Stratification for Atherosclerotic Cardiovascular Disease Across the Cardiovascular-Kidney-Metabolic Continuum.",
+      "reported_at": "2026-10-30T01:37:26.820655"
+    },
+    "42945358": {
+      "title": "Exploring patient perspectives on barriers contributing to lost to follow-up in hypertension care: A qualitative study in a tertiary-care hospital in Coastal Karnataka, India.",
+      "reported_at": "2026-10-30T01:37:26.820655"
     }
   }
 }
