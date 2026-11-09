@@ -1,49 +1,5 @@
 {
   "reported_pmids": {
-    "42084484": {
-      "title": "Antibiotic Duration after Debridement and Implant Retention for Early Postoperative Spinal Implant Infections: A Multicenter Cohort Study.",
-      "reported_at": "2026-05-10T22:51:11.324136"
-    },
-    "42090381": {
-      "title": "Nasal steroids, irrigation, oral antibiotics, and subgroup targeting for effective management of acute sinusitis (NOSES): Protocol for a comparative effectiveness randomized controlled trial.",
-      "reported_at": "2026-05-11T22:57:15.861890"
-    },
-    "42085423": {
-      "title": "Health coach-supported mobile health intervention to improve adherence to lipid-lowering medications (AdLip): Design and rationale of a multicentre randomized controlled trial protocol.",
-      "reported_at": "2026-05-11T22:57:15.861890"
-    },
-    "42102153": {
-      "title": "Life lost due to the COVID-19 pandemic: A model-based cohort analysis of mortality displacement in the registered population of England.",
-      "reported_at": "2026-05-11T22:57:15.861890"
-    },
-    "42105777": {
-      "title": "The role of community-based blood pressure screening in improving hypertension care.",
-      "reported_at": "2026-05-11T22:57:15.861890"
-    },
-    "42090443": {
-      "title": "Impact of the COVID-19 pandemic on sex-related disparities in cystic fibrosis healthcare utilization and outcomes: A population study.",
-      "reported_at": "2026-05-11T22:57:15.861890"
-    },
-    "42102359": {
-      "title": "Subtypes of Type 2 Diabetes and Prediabetes: Mortality and Excess Life Lost in South Asians.",
-      "reported_at": "2026-05-12T23:05:19.486853"
-    },
-    "42118608": {
-      "title": "Precision Medicine to Redefine Insulin Secretion and Monogenic Diabetes (PRISM): A Randomized Controlled Trial in Chinese Patients With Young-Onset Diabetes.",
-      "reported_at": "2026-05-12T23:05:19.486853"
-    },
-    "42114520": {
-      "title": "A comparison of the effects of tirzepatide and dulaglutide on major kidney events in people with type 2 diabetes: pre-specified exploratory analyses of the SURPASS-CVOT trial.",
-      "reported_at": "2026-05-12T23:05:19.486853"
-    },
-    "42085366": {
-      "title": "Risk factors and prognosis analysis of gastrointestinal bleeding combined with hemorrhagic shock in patients in intensive care unit:A retrospective study.",
-      "reported_at": "2026-05-12T23:05:19.486853"
-    },
-    "42113791": {
-      "title": "Patient activation among patients with type 2 diabetes and its association with perception of care, perceived autonomy support, sociodemographic and clinical characteristics.",
-      "reported_at": "2026-05-12T23:05:19.486853"
-    },
     "42121051": {
       "title": "A case report of concomitant anti-glomerular basement membrane disease, IgA nephropathy, and membranous nephropathy.",
       "reported_at": "2026-05-13T23:06:14.707762"
@@ -1671,6 +1627,26 @@
     "42966713": {
       "title": "Cognitive impairment in uncontrolled vs controlled hypertension - systematic review and meta-analysis.",
       "reported_at": "2026-11-06T02:01:16.681879"
+    },
+    "42970225": {
+      "title": "AAOS Clinical Practice Guidelines for Carpal Tunnel Syndrome: Synopsis and Practice Implications.",
+      "reported_at": "2026-11-09T01:29:48.790389"
+    },
+    "42970799": {
+      "title": "Measles.",
+      "reported_at": "2026-11-09T01:29:48.790389"
+    },
+    "42981442": {
+      "title": "Impact of cardiometabolic and renal phenotypes on the prevalence of type 2 diabetes in the geriatric population of Añisok, Equatorial Guinea: A prospective cohort study (2024-2025).",
+      "reported_at": "2026-11-09T01:29:48.790389"
+    },
+    "42977886": {
+      "title": "Mental Health Stigma in Primary Care: Association with Participation in a Behavioral Health Training Program.",
+      "reported_at": "2026-11-09T01:29:48.790389"
+    },
+    "42986816": {
+      "title": "Depressive symptoms among people living with HIV in Northern Tanzania: The role of family history, social support, and maladaptive coping.",
+      "reported_at": "2026-11-09T01:29:48.790389"
     }
   }
 }
