@@ -1,9 +1,5 @@
 {
   "reported_pmids": {
-    "42121051": {
-      "title": "A case report of concomitant anti-glomerular basement membrane disease, IgA nephropathy, and membranous nephropathy.",
-      "reported_at": "2026-05-13T23:06:14.707762"
-    },
     "42106627": {
       "title": "National dialysis registry of the Dominican Republic: first nationwide epidemiological analysis of renal replacement therapy.",
       "reported_at": "2026-05-14T22:58:52.521167"
@@ -1647,6 +1643,22 @@
     "42986816": {
       "title": "Depressive symptoms among people living with HIV in Northern Tanzania: The role of family history, social support, and maladaptive coping.",
       "reported_at": "2026-11-09T01:29:48.790389"
+    },
+    "42981292": {
+      "title": "Effects and mechanisms of exercise timing on cognitive function in older type 2 diabetes mellitus patients with mild cognitive impairment: A magnetic resonance imaging-based randomized controlled trial protocol.",
+      "reported_at": "2026-11-10T03:59:43.979006"
+    },
+    "43001746": {
+      "title": "Intensive Blood-Pressure Lowering in Patients with Type 2 Diabetes.",
+      "reported_at": "2026-11-10T03:59:43.979006"
+    },
+    "42986362": {
+      "title": "Common Genetic Variants Near SLC2A2 and Glycemic Response to Glimepiride in the GRADE Comparative Effectiveness Clinical Trial.",
+      "reported_at": "2026-11-10T03:59:43.979006"
+    },
+    "42986804": {
+      "title": "Genotype-derived interpretive categories of drug response in 908 pharmacogenomic reports from Chinese patients with type 2 diabetes: A retrospective single-centre study.",
+      "reported_at": "2026-11-10T03:59:43.979006"
     }
   }
 }
