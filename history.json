@@ -1,37 +1,5 @@
 {
   "reported_pmids": {
-    "42106627": {
-      "title": "National dialysis registry of the Dominican Republic: first nationwide epidemiological analysis of renal replacement therapy.",
-      "reported_at": "2026-05-14T22:58:52.521167"
-    },
-    "42103537": {
-      "title": "Early vasopressin administration in septic shock: A systematic review, meta-analysis, and multicenter retrospective observational study.",
-      "reported_at": "2026-05-14T22:58:52.521167"
-    },
-    "42121061": {
-      "title": "Hematological parameter dynamics in critically ill patients treated with oXiris<sup>®</sup>-based CRRT and CytoSorb<sup>®</sup> hemoadsorption: a prospective single-center study.",
-      "reported_at": "2026-05-14T22:58:52.521167"
-    },
-    "42132206": {
-      "title": "Structural and Functional Abnormalities in the Preterm Heart: From Development to Adulthood.",
-      "reported_at": "2026-05-15T22:56:52.749288"
-    },
-    "42113738": {
-      "title": "Efficacy and safety of the ayurvedic formulation 'Trikatu' as an add-on to standard care in dyslipidemia: Study protocol for a randomized, double-blind, placebo-controlled trial evaluating lipid parameters, and gut microbiota.",
-      "reported_at": "2026-05-15T22:56:52.749288"
-    },
-    "42132198": {
-      "title": "Effect of Different Types of Whole Dietary Pulses on Established Therapeutic Lipid Targets for Cardiovascular Risk Reduction: An Updated Systematic Review and Dose-Response Meta-Analysis of Randomized Controlled Trials.",
-      "reported_at": "2026-05-15T22:56:52.749288"
-    },
-    "42137945": {
-      "title": "Calcium Channel Blockade Versus Beta-Blockade for Hypertension in Heart Failure With Preserved Ejection Fraction: A Randomized Crossover Trial.",
-      "reported_at": "2026-05-15T22:56:52.749288"
-    },
-    "42132169": {
-      "title": "Determinants of Successful Implementation: A Mixed-Methods Evaluation of a Team-Based Telehealth Hypertension Management Program for Underserved Patients.",
-      "reported_at": "2026-05-15T22:56:52.749288"
-    },
     "42135584": {
       "title": "Implementation of a Hospital-Based Screening and Treatment Program for Unhealthy Alcohol Use.",
       "reported_at": "2026-05-18T23:04:31.102754"
@@ -1659,6 +1627,26 @@
     "42986804": {
       "title": "Genotype-derived interpretive categories of drug response in 908 pharmacogenomic reports from Chinese patients with type 2 diabetes: A retrospective single-centre study.",
       "reported_at": "2026-11-10T03:59:43.979006"
+    },
+    "43018043": {
+      "title": "Population Impact of the 2026 American College of Cardiology/American Heart Association Dyslipidemia Guideline on Lipid-Lowering Therapy Eligibility Among US Adults.",
+      "reported_at": "2026-11-13T02:28:24.394336"
+    },
+    "42998054": {
+      "title": "Impact of Statin and Aspirin Use on Dementia Diagnosis Stratified by Cardiovascular Risk.",
+      "reported_at": "2026-11-13T02:28:24.394336"
+    },
+    "43001751": {
+      "title": "Interleukin-6 Inhibition with Ziltivekimab for Atherosclerotic Disease.",
+      "reported_at": "2026-11-13T02:28:24.394336"
+    },
+    "43008042": {
+      "title": "Psychosocial influences on hypertension in Southeastern Nigeria: A mixed-methods study protocol.",
+      "reported_at": "2026-11-13T02:28:24.394336"
+    },
+    "43001741": {
+      "title": "Intensive Blood-Pressure Control in Patients with Previous Ischemic Stroke.",
+      "reported_at": "2026-11-13T02:28:24.394336"
     }
   }
 }
