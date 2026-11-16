@@ -1,45 +1,5 @@
 {
   "reported_pmids": {
-    "42135584": {
-      "title": "Implementation of a Hospital-Based Screening and Treatment Program for Unhealthy Alcohol Use.",
-      "reported_at": "2026-05-18T23:04:31.102754"
-    },
-    "42127084": {
-      "title": "General practice interventions to reduce cardiovascular disease risk in patients with severe mental illness: A scoping review.",
-      "reported_at": "2026-05-18T23:04:31.102754"
-    },
-    "42118764": {
-      "title": "Online search interest in major depressive disorder: Infodemiology study using the most visited search engine in Japan.",
-      "reported_at": "2026-05-18T23:04:31.102754"
-    },
-    "42135583": {
-      "title": "Patient and Primary Care Characteristics Associated with Emergency Department Utilization Among Homeless-Experienced Veterans.",
-      "reported_at": "2026-05-18T23:04:31.102754"
-    },
-    "42115570": {
-      "title": "Reclassifying Primary Care: A Decision Tree Approach to Improving Workforce Estimates and Research Using Claims Data.",
-      "reported_at": "2026-05-18T23:04:31.102754"
-    },
-    "42139324": {
-      "title": "The mediating roles of personal mastery and health-promoting behaviors in the relationship between self-regulatory fatigue and quality of life among patients with type 2 diabetes mellitus.",
-      "reported_at": "2026-05-19T23:04:58.915627"
-    },
-    "42140211": {
-      "title": "Type 1 diabetes intervention clusters in resource-limited settings: a systematic review and economic evaluation.",
-      "reported_at": "2026-05-19T23:04:58.915627"
-    },
-    "42154764": {
-      "title": "Association between obesity and medical expenditures among Japanese adults treated for diabetes: A secondary analysis.",
-      "reported_at": "2026-05-19T23:04:58.915627"
-    },
-    "42144329": {
-      "title": "Postprandial Reactive Hypoglycemia Due to Disproportionate Insulin Secretion in Young Adult Japanese Women with a Normal Weight and a History of Childhood Obesity: A Three-case Series with a Review of Literature.",
-      "reported_at": "2026-05-19T23:04:58.915627"
-    },
-    "42149890": {
-      "title": "Network toxicology and bioinformatics analysis predict potential molecular targets and mechanisms by which sevoflurane and propofol influence type 2 diabetes mellitus.",
-      "reported_at": "2026-05-19T23:04:58.915627"
-    },
     "42144321": {
       "title": "Rhabdomyolysis caused by neuroleptic malignant syndrome requiring long-term hemodialysis: A case report and literature review.",
       "reported_at": "2026-05-21T23:04:51.567089"
@@ -1651,6 +1611,26 @@
     "43021096": {
       "title": "Impact of ramadan fasting on bone mineral metabolism in hemodialysis: a multi-center prospective observational cohort study.",
       "reported_at": "2026-11-14T01:59:28.390555"
+    },
+    "43004117": {
+      "title": "Primary Care Practice Productivity and Efficiency: Qualitative Evaluation of a Novel Clinic-Based Measure.",
+      "reported_at": "2026-11-16T01:37:58.433673"
+    },
+    "43004122": {
+      "title": "Medication Safety During Care Transitions for Older Adults: Development of the ALICE Framework.",
+      "reported_at": "2026-11-16T01:37:58.433673"
+    },
+    "43015563": {
+      "title": "Primary Care Engagement and Acute Care Utilization by Interpreter Use in an Urban Resident Clinic: A Retrospective Cohort Study.",
+      "reported_at": "2026-11-16T01:37:58.433673"
+    },
+    "43009704": {
+      "title": "Persistence of Benzodiazepines After Initiation in Patients Prescribed Long-term Opioids: Retrospective Cohort Study.",
+      "reported_at": "2026-11-16T01:37:58.433673"
+    },
+    "43009703": {
+      "title": "Patient Acceptability and Perceptions of an Artificial Intelligence Chatbot in a Primary Care Patient Portal: Cross-Sectional Survey.",
+      "reported_at": "2026-11-16T01:37:58.433673"
     }
   }
 }
