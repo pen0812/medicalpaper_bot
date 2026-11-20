@@ -1,9 +1,5 @@
 {
   "reported_pmids": {
-    "42149677": {
-      "title": "Treatment of Metabolic Acidosis in Patients with Chronic Kidney Disease: Current Thinking.",
-      "reported_at": "2026-05-23T22:55:18.826528"
-    },
     "41502186": {
       "title": "Evaluation of a Remote Therapeutic Monitoring Device and Integrated Care Platform in Outpatient Parenteral Antimicrobial Therapy.",
       "reported_at": "2026-05-24T22:59:36.309793"
@@ -1643,6 +1639,10 @@
     "43044904": {
       "title": "Continuous Kidney Replacement Therapy in Patients Requiring Mechanical Circulatory Support: A Practical Review.",
       "reported_at": "2026-11-19T02:57:18.496661"
+    },
+    "43046965": {
+      "title": "Shifting the Pressure-Natriuresis Curve: The Cellular Mechanisms of Female Renal Resilience.",
+      "reported_at": "2026-11-20T02:52:05.908653"
     }
   }
 }
