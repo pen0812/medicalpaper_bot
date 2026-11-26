@@ -1,33 +1,5 @@
 {
   "reported_pmids": {
-    "42204472": {
-      "title": "Comprehensive geriatric assessment and optimisation in advanced chronic kidney disease: a systematic review and narrative synthesis examining clinical outcomes and decision-making.",
-      "reported_at": "2026-05-28T23:19:19.479099"
-    },
-    "42185150": {
-      "title": "Human infection with Andes hantavirus: an update for the general physician.",
-      "reported_at": "2026-05-28T23:19:19.479099"
-    },
-    "42178265": {
-      "title": "Heparin-induced Thrombocytopenia During Multiple Extracorporeal Mechanical Support for Fulminant Myocarditis: A Case Report with a Literature Review.",
-      "reported_at": "2026-05-28T23:19:19.479099"
-    },
-    "42168895": {
-      "title": "Albumin/creatinine ratio thresholds associated with poor sleep quality in elderly obese non-diabetic individuals: a cross-sectional study.",
-      "reported_at": "2026-05-28T23:19:19.479099"
-    },
-    "42207773": {
-      "title": "Cost-effectiveness of inclisiran in patients with atherosclerotic cardiovascular disease from Chinese healthcare perspective.",
-      "reported_at": "2026-05-29T23:14:32.126515"
-    },
-    "42187087": {
-      "title": "In Vivo Base Editing of <i>PCSK9</i> with VERVE-102 for Hypercholesterolemia.",
-      "reported_at": "2026-05-29T23:14:32.126515"
-    },
-    "42207772": {
-      "title": "Burden and patterns of dyslipidaemia among adult Ghanaians: A systematic review.",
-      "reported_at": "2026-05-29T23:14:32.126515"
-    },
     "42201886": {
       "title": "Repeated dosing of myrrh, chamomile extract, and coffee charcoal reveals potential health-beneficial effects in patients with irritable bowel syndrome in the M-SHIME simulator.",
       "reported_at": "2026-05-31T23:00:59.518874"
@@ -1635,6 +1607,10 @@
     "43050287": {
       "title": "Semaglutide Effect on Kidney, Cardiovascular, and Mortality Outcomes in Racial and Ethnic Groups: FLOW Trial Post Hoc Analyses.",
       "reported_at": "2026-11-24T05:46:49.626216"
+    },
+    "43071233": {
+      "title": "Determinants of patients' trust in their usual nephrologists during renal replacement therapy selection: a nationwide multicenter cross-sectional study in Japan.",
+      "reported_at": "2026-11-26T03:58:48.423204"
     }
   }
 }
